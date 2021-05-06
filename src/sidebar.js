@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Sid(){
     return <>
       <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -14,9 +16,9 @@ export default function Sid(){
 <hr class="sidebar-divider my-0"/>
 
 <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <Link to="dashboard" class="nav-link" href="index.html">
         <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Dashboard</span></a>
+        <span>Dashboard</span></Link>
 </li>
 
 <hr class="sidebar-divider"/>
@@ -27,37 +29,22 @@ export default function Sid(){
 </div>
 
 <li class="nav-item">
-    <div class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+    <Link to="/userlist" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="true" aria-controls="collapseTwo">
         <i class="fas fa-fw fa-cog"></i>
-        <span>Components</span>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Components:</h6>
-            <a class="collapse-item" href="buttons.html">Buttons</a>
-            <a class="collapse-item" href="cards.html">Cards</a>
-        </div>
-    </div>
+        <span>user</span>
+    </Link>
+    
 </li>
 
 
 <li class="nav-item">
-    <div class="nav-link collapsed"  data-toggle="collapse" data-target="#collapseUtilities"
+    <Link to="product" class="nav-link collapsed"  data-toggle="collapse" data-target="#collapseUtilities"
         aria-expanded="true" aria-controls="collapseUtilities">
         <i class="fas fa-fw fa-wrench"></i>
-        <span>Utilities</span>
-    </div>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Utilities:</h6>
-            <a class="collapse-item" href="utilities-color.html">Colors</a>
-            <a class="collapse-item" href="utilities-border.html">Borders</a>
-            <a class="collapse-item" href="utilities-animation.html">Animations</a>
-            <a class="collapse-item" href="utilities-other.html">Other</a>
-        </div>
-    </div>
+        <span>Product</span>
+    </Link>
+    
 </li>
 
 
